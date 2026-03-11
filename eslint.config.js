@@ -1,15 +1,14 @@
 export default {
-  env: {
-    browser: true,
-    es2024: true
-  },
-  parserOptions: {
+  languageOptions: {
     ecmaVersion: "latest",
-    sourceType: "module"
+    sourceType: "module",
+    globals: {
+      window: "readonly",
+      document: "readonly"
+    }
   },
-  extends: ["eslint:recommended"],
   rules: {
-    "no-unused-vars": ["error", { "vars": "all", "args": "none", "ignoreRestSiblings": true }],
+    "no-unused-vars": ["error", { vars: "all", args: "none", ignoreRestSiblings: true }],
     "no-console": "error",
     "prefer-const": ["warn"]
   }
