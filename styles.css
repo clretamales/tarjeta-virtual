@@ -26,20 +26,23 @@ body {
 .page-shell {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 24px 56px;
+  padding: 120px 24px 56px;
 }
 
 .top-bar {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 18px 0;
+  padding: 18px 24px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-  position: sticky;
+  position: fixed;
   top: 0;
-  background: rgba(4, 21, 48, 0.85);
-  backdrop-filter: blur(10px);
-  z-index: 10;
+  left: 0;
+  right: 0;
+  background: rgba(4, 21, 48, 0.95);
+  backdrop-filter: blur(12px);
+  z-index: 30;
+  gap: 12px;
 }
 
 .brand {
@@ -379,21 +382,57 @@ textarea {
 @media (max-width: 900px) {
   .main-nav {
     position: fixed;
-    inset: 76px 0 auto;
-    transform: translateY(-120%);
+    top: 68px;
+    right: 18px;
+    left: 18px;
+    max-height: 0;
+    overflow: hidden;
+    transform: translateY(0);
     flex-direction: column;
-    background: rgba(4, 21, 48, 0.92);
-    padding: 16px 24px 32px;
-    gap: 16px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-    visibility: hidden;
-    pointer-events: none;
+    background: rgba(4, 21, 48, 0.96);
+    padding: 0 24px;
+    gap: 0;
+    border-radius: 18px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    transition: max-height 0.35s ease, padding 0.35s ease;
   }
 
   .main-nav.open {
-    visibility: visible;
-    transform: translateY(0);
-    pointer-events: auto;
+    max-height: 360px;
+    padding: 18px 24px 24px;
+  }
+
+  .main-nav a {
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
+  .main-nav a:last-child {
+    border-bottom: none;
+  }
+
+  .main-nav.open a:nth-child(1) {
+    margin-left: 0;
+  }
+
+  .main-nav.open a:nth-child(2) {
+    margin-left: 12px;
+  }
+
+  .main-nav.open a:nth-child(3) {
+    margin-left: 24px;
+  }
+
+  .main-nav.open a:nth-child(4) {
+    margin-left: 36px;
+  }
+
+  .main-nav.open a:nth-child(5) {
+    margin-left: 48px;
+  }
+
+  .main-nav.open a:nth-child(6) {
+    margin-left: 60px;
   }
 
   .menu-toggle {
