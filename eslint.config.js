@@ -1,11 +1,11 @@
 export default {
-  env: {
-    browser: true,
-    es2024: true
-  },
-  parserOptions: {
+  languageOptions: {
     ecmaVersion: "latest",
-    sourceType: "module"
+    sourceType: "module",
+    globals: {
+      window: "readonly",
+      document: "readonly"
+    }
   },
   extends: ["eslint:recommended"],
   rules: {

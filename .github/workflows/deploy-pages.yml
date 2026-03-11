@@ -4,15 +4,14 @@ on:
   push:
     branches:
       - main
+  pull_request:
+    branches:
+      - main
   workflow_dispatch:
 
 jobs:
-  deploy:
+  lint:
     runs-on: ubuntu-latest
-    permissions:
-      contents: read
-      pages: write
-      id-token: write
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
@@ -24,6 +23,18 @@ jobs:
         run: npm install
       - name: Run ESLint
         run: npm run lint
+
+  deploy:
+    if: github.event_name != 'pull_request'
+    needs: lint
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
       - name: Configure Pages
         uses: actions/configure-pages@v4
       - name: Upload artifact
