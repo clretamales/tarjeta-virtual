@@ -1,0 +1,15 @@
+{
+  "name": "hola-mundo-estatico",
+  "version": "1.0.0",
+  "description": "Base mínima para un sitio estático con HTML, CSS y JavaScript puro.",
+  "type": "module",
+  "scripts": {
+    "lint": "eslint ."
+  },
+  "devDependencies": {
+    "eslint": "^9.1.0"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
