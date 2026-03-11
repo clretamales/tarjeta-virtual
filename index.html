@@ -3,28 +3,252 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hola Mundo</title>
+    <title>José Andrés Retamales | Arquitectura TI Empresarial</title>
+    <meta
+      name="description"
+      content="Consultoría tecnológica para empresas y gerencias de TI. José Andrés Retamales ofrece arquitectura de software y estrategia cloud."
+    />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="page">
-      <header class="hero">
-        <p class="tagline">Base inicial para sitio estático</p>
-        <h1>Hola Mundo</h1>
-        <p id="status" class="status">Todo listo para comenzar.</p>
-        <button id="action-button" type="button">Actualizar mensaje</button>
+    <div class="page-shell">
+      <header class="top-bar">
+        <div class="brand">
+          <p class="brand-name">José Andrés Retamales Ponce</p>
+          <p class="brand-role">Arquitecto de Software / Arquitecto TI Empresarial</p>
+        </div>
+        <nav class="main-nav" aria-label="Navegación principal">
+          <a href="#services">Servicios</a>
+          <a href="#value">Valor</a>
+          <a href="#profile">Perfil</a>
+          <a href="#map">Mapa</a>
+          <a href="#contact">Contacto</a>
+        </nav>
+        <div class="top-actions">
+          <a
+            class="btn btn-outline whatsapp-link"
+            href="https://wa.me/569XXXXXXXX"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span aria-hidden="true">💬</span>
+            Contactar por WhatsApp
+          </a>
+          <button class="menu-toggle" aria-label="Abrir menú">
+            <span></span>
+            <span></span>
+          </button>
+        </div>
       </header>
+
       <main>
-        <section class="overview">
-          <h2>Diseñado para crecer</h2>
+        <section class="hero" id="hero">
+          <div class="hero-content">
+            <p class="eyebrow">Consultoría tecnológica estratégica</p>
+            <h1>Arquitectura tecnológica que impulsa el negocio</h1>
+            <p class="lead">
+              José Andrés Retamales ayuda a empresas y líderes tecnológicos a diseñar
+              arquitecturas sólidas y alineadas con los objetivos corporativos.
+            </p>
+            <p class="tagline">
+              Ayudo a empresas a diseñar arquitecturas tecnológicas sólidas que alinean la
+              tecnología con los objetivos del negocio.
+            </p>
+            <div class="hero-actions">
+              <a
+                class="btn btn-primary whatsapp-link"
+                href="https://wa.me/569XXXXXXXX"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span aria-hidden="true">🚀</span>
+                Contactar por WhatsApp
+              </a>
+              <button class="btn btn-ghost" data-scroll-target="#services">
+                Ver servicios
+              </button>
+            </div>
+          </div>
+        </section>
+
+        <section id="services" class="services-section">
+          <div class="section-heading">
+            <p class="eyebrow">Servicios B2B</p>
+            <h2>Soluciones de arquitectura empresarial</h2>
+          </div>
+          <div class="service-grid">
+            <article class="service-card">
+              <h3>Arquitectura de software empresarial</h3>
+              <p>
+                Diagnóstico, definición y gobernanza de arquitecturas con dominios alineados a
+                las prioridades estratégicas.
+              </p>
+            </article>
+            <article class="service-card">
+              <h3>Diseño de APIs y plataformas</h3>
+              <p>
+                Modelado de APIs, contratos y plataformas que conectan sistemas internos y
+                socios con observabilidad avanzada.
+              </p>
+            </article>
+            <article class="service-card">
+              <h3>Modernización tecnológica</h3>
+              <p>
+                Migraciones ordenadas, refactorizaciones y adopción de prácticas modernas sin
+                comprometer operaciones críticas.
+              </p>
+            </article>
+            <article class="service-card">
+              <h3>Gobierno tecnológico</h3>
+              <p>
+                Estructuras de decisión, revisión de arquitecturas y apoyo metodológico para
+                comités de tecnología.
+              </p>
+            </article>
+            <article class="service-card">
+              <h3>Estrategia cloud</h3>
+              <p>
+                Planes de adopción cloud, patrullas operativas y modelos de consumo resilientes.
+              </p>
+            </article>
+            <article class="service-card">
+              <h3>Integración de sistemas</h3>
+              <p>
+                Integraciones de datos, eventos y procesos con calidad, seguridad y monitoreo.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section id="value" class="value-section">
+          <div class="section-heading">
+            <p class="eyebrow">Valor para tu organización</p>
+            <h2>Resultados orientados al negocio</h2>
+          </div>
+          <div class="value-grid">
+            <div>
+              <h3>Alineación tecnología y negocio</h3>
+              <p>
+                Arquitecturas que reflejan prioridades comerciales y facilitan decisiones de
+                inversión.
+              </p>
+            </div>
+            <div>
+              <h3>Reducción de complejidad</h3>
+              <p>
+                Simplificación de paisajes tecnológicos con modelos repetibles y estándares.
+              </p>
+            </div>
+            <div>
+              <h3>Escalabilidad de plataformas</h3>
+              <p>
+                Capacidad de respuesta para crecimientos rápidos, con monitoreo y resiliencia.
+              </p>
+            </div>
+            <div>
+              <h3>Mejora en decisiones tecnológicas</h3>
+              <p>
+                Informes claros, KPIs y gobernanza para respaldar decisiones de dirección.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section id="profile" class="profile-section">
+          <div class="section-heading">
+            <p class="eyebrow">Perfil profesional</p>
+            <h2>Arquitecto con visión estratégica</h2>
+          </div>
           <p>
-            Esta plantilla minimalista emplea HTML semántico, CSS moderno y JavaScript puro
-            para ofrecer una base ordenada, profesional y completamente responsive.
+            José Andrés Retamales combina más de una década diseñando arquitecturas de software
+            complejas con habilidades consultivas para CEOs y gerencias tecnológicas. Entiende
+            los desafíos de transformación digital y acompaña decisiones críticas con claridad y
+            rigor.
           </p>
         </section>
+
+        <section id="map" class="map-section">
+          <div class="map-heading">
+            <p class="eyebrow">Presencia en Santiago de Chile</p>
+            <h2>Conectemos desde la Región Metropolitana</h2>
+          </div>
+          <div class="map-frame">
+            <iframe
+              title="Ubicación en Santiago"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3329.714237405265!2d-70.628340!3d-33.448890!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c4a9f2d9f6a3%3A0x8b27c12075db1218!2sSantiago%2C%20Regi%C3%B3n%20Metropolitana!5e0!3m2!1ses-419!2scl!4v1688658533331!5m2!1ses-419!2scl"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+          <div class="section-heading">
+            <p class="eyebrow">Contacto</p>
+            <h2>Hablemos de tu próximo desafío TI</h2>
+          </div>
+          <div class="contact-inner">
+            <form id="contact-form" novalidate>
+              <label for="contact-name">Nombre</label>
+              <input type="text" id="contact-name" name="name" placeholder="Tu nombre" required />
+
+              <label for="contact-company">Empresa</label>
+              <input type="text" id="contact-company" name="company" placeholder="Nombre de tu empresa" required />
+
+              <label for="contact-email">Email</label>
+              <input
+                type="email"
+                id="contact-email"
+                name="email"
+                placeholder="nombre@empresa.com"
+                required
+              />
+
+              <label for="contact-message">Mensaje</label>
+              <textarea
+                id="contact-message"
+                name="message"
+                rows="4"
+                placeholder="Cuéntame sobre tu iniciativa"
+                required
+              ></textarea>
+
+              <p id="form-feedback" class="form-feedback" aria-live="polite"></p>
+
+              <button type="submit" class="btn btn-primary">
+                Enviar consulta
+              </button>
+            </form>
+            <div class="contact-whatsapp">
+              <div>
+                <p>Contacto directo</p>
+                <strong>José Andrés Retamales</strong>
+                <span>Arquitecto TI Empresarial</span>
+              </div>
+              <a
+                class="btn btn-outline whatsapp-link contact-whatsapp-link"
+                href="https://wa.me/569XXXXXXXX"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span aria-hidden="true">📩</span>
+                Hablar por WhatsApp
+              </a>
+            </div>
+          </div>
+        </section>
       </main>
-      <footer>
-        <p>Listo para tu próxima iteración.</p>
+
+      <footer class="site-footer">
+        <div>
+          <strong>José Andrés Retamales</strong>
+          <p>Arquitecto TI Empresarial</p>
+        </div>
+        <div>
+          <p>Contacto</p>
+          <a href="mailto:contacto@retamales.tech">contacto@retamales.tech</a>
+          <a href="#">LinkedIn</a>
+        </div>
       </footer>
     </div>
     <script src="script.js" defer></script>

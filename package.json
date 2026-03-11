@@ -1,7 +1,7 @@
 {
-  "name": "hola-mundo-estatico",
+  "name": "retamales-architecture",
   "version": "1.0.0",
-  "description": "Base mínima para un sitio estático con HTML, CSS y JavaScript puro.",
+  "description": "Landing page corporativa para servicios de consultoría tecnológica de José Andrés Retamales.",
   "type": "module",
   "scripts": {
     "lint": "eslint ."
