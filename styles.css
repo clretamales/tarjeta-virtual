@@ -380,16 +380,20 @@ textarea {
   .main-nav {
     position: fixed;
     inset: 76px 0 auto;
-    transform: translateY(-100%);
+    transform: translateY(-120%);
     flex-direction: column;
     background: rgba(4, 21, 48, 0.92);
     padding: 16px 24px 32px;
     gap: 16px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    visibility: hidden;
+    pointer-events: none;
   }
 
   .main-nav.open {
+    visibility: visible;
     transform: translateY(0);
+    pointer-events: auto;
   }
 
   .menu-toggle {

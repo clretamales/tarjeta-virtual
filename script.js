@@ -1,23 +1,7 @@
-const menuToggle = document.querySelector(".menu-toggle");
-const nav = document.querySelector(".main-nav");
 const serviceCards = document.querySelectorAll(".service-card");
 const scrollButtons = document.querySelectorAll("[data-scroll-target]");
 const form = document.getElementById("contact-form");
 const feedback = document.getElementById("form-feedback");
-
-if (menuToggle && nav) {
-  menuToggle.addEventListener("click", () => {
-    menuToggle.classList.toggle("open");
-    nav.classList.toggle("open");
-  });
-}
-
-nav?.querySelectorAll("a").forEach((link) =>
-  link.addEventListener("click", () => {
-    nav.classList.remove("open");
-    menuToggle?.classList.remove("open");
-  })
-);
 
 scrollButtons.forEach((button) => {
   button.addEventListener("click", () => {
